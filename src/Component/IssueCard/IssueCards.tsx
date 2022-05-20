@@ -38,9 +38,9 @@ const IssueCards = ({ list, filterbypriority, filterbyassignee }: Props) => {
   }, [filterbyassignee]);
   useEffect(() => {
     if (filterbypriority === '') {
-      setFilter1([...filter1]);
+      setFilter1([...list]);
     } else {
-      setFilter1([...list.filter((ele: any) => ele.priority == filterbypriority)]);
+      setFilter1([...filter1.filter((ele: any) => ele.priority == filterbypriority)]);
     }
   }, [filterbypriority]);
   return (

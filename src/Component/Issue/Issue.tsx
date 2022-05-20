@@ -247,6 +247,8 @@ const Issue = () => {
                     <option>Sprint-1</option>
                     <option>Sprint-2</option>
                     <option>Sprint-3</option>
+                    <option>Sprint-4</option>
+                    <option>Sprint-5</option>
                   </select>
                 </div>
               </div>
