@@ -21,7 +21,7 @@ const NavBar = (props: any) => {
         )}
         {!props.flag && <div className={classes.search}></div>}
         <div className={classes.user}>
-          <p>Anjali Gupta</p>
+          <p>Test user</p>
           <img src={logout} alt="" onClick={handleLogout} />
         </div>
       </div>
