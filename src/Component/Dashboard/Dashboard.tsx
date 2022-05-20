@@ -109,7 +109,7 @@ const Dashboard = () => {
                   </select>
                 </div>
                 <div className={classes['input-container']}>
-                  <label htmlFor={classes.select}>{('Project Owner')}</label>
+                  <label htmlFor={classes.select}>{t('Project Owner')}</label>
                   <input type="text" className={classes.owner} name="project Owner" value={user} />
                 </div>
               </div>
@@ -119,7 +119,6 @@ const Dashboard = () => {
                     className={classes['filter-container']}
                     onChange={(event) => {
                       setFassign(event.target.value);
-                      console.log(event.target.value,"dfe")
                     }}
                     name="Priority">
                     <option selected value="">
@@ -139,9 +138,8 @@ const Dashboard = () => {
                     name="Priority"
                     onChange={(event) => {
                       setFpriority(event.target.value);
-                      console.log(event.target.value,"prioity");
                     }}>
-                    <option selected value=''>
+                    <option selected value="">
                       {t('None')}
                     </option>
                     <option value="1">{'LOW'}</option>

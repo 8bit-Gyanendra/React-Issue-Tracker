@@ -50,25 +50,24 @@ const Issue = () => {
       })
       .catch((error: any) => {
         if (summary.trim().length < 5) {
-          alert('Summary must be at least 5 characters');
+          alert('Enetr summary upto 5 characters');
         } else if (type.trim().length <= 0) {
-          alert('Type cannot be empty');
+          alert('Type is Empty!');
         } else if (project.trim().length <= 0) {
-          alert('Project cannot be empty');
+          alert('Project is empty!');
         } else if (description.trim().length <= 0) {
-          alert('Description cannot be empty');
+          alert('Description is empty!');
         } else if (priority.trim().length <= 0) {
-          alert('Priority cannot be empty');
+          alert('Priority is empty!');
         } else if (assignee.trim().length <= 0) {
-          alert('Assignee cannot be empty');
+          alert('Assignee is empty!');
         } else if (tags.trim().length <= 0) {
-          alert('Tags cannot be empty');
+          alert('Tags is empty!');
         } else if (sprint.trim().length <= 0) {
-          alert('Sprint cannot be empty');
+          alert('Sprint is empty!');
         } else if (story.trim().length <= 0) {
-          alert('Story must be between 1-13');
+          alert('Enter story-points between 1-13');
         }
-        console.log(error.response);
       });
   };
   const handleReset = (event: any) => {
