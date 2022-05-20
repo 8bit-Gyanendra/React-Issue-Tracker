@@ -23,25 +23,21 @@ const CreateProject = () => {
         <div className={classes.content}>
           <NavBar flag={false} />
 
-
           <div className={classes['project']}>
-
             <div className={classes['input-container']}>
               <label htmlFor={classes.summary}>Project Name</label>
               <input
                 type="text"
-                placeholder='Project Name'
+                placeholder="Project Name"
                 className={classes.summary}
-                name="Summary" />
+                name="Summary"
+              />
             </div>
-
 
             <div className={classes['select-input']}>
               <div className={classes['input-container']}>
                 <label>Owner</label>
-                <select
-                  className={classes.select}
-                  name="Type">
+                <select className={classes.select} name="Type">
                   <option disabled selected hidden value="">
                     Select
                   </option>
@@ -55,26 +51,20 @@ const CreateProject = () => {
             <div className={classes.content}>
               <div className={classes['input-container']}>
                 <label htmlFor={classes.summary}>Project Start Date</label>
-                <input
-                  type="text"
-                  placeholder='MM/DD/YYY'
-                  className={classes.summary} />
+                <input type="text" placeholder="MM/DD/YYY" className={classes.summary} />
               </div>
             </div>
 
             <div className={classes.content}>
               <div className={classes['input-container']}>
                 <label htmlFor={classes.summary}>Project End Date</label>
-                <input
-                  type="text"
-                  placeholder='mm/DD/YYY'
-                  className={classes.summary}
-                />
+                <input type="text" placeholder="mm/DD/YYY" className={classes.summary} />
               </div>
             </div>
 
             <div className={classes.button}>
-              <button type="reset" className={classes.reset}>RESET
+              <button type="reset" className={classes.reset}>
+                RESET
               </button>
               <button type="submit" className={classes.create}>
                 CREATE
