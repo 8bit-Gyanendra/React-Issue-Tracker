@@ -37,7 +37,6 @@
   display: flex;
 }
 
-
 /* .content {
   margin-left: 3%;
   margin-top: 3%;
@@ -55,14 +54,14 @@
 .story {
   width: 70vw;
   height: 52px;
-  background: #f7f8fa;
+  background: #d6d7da;
   border: none;
   border-bottom: 1px solid #000;
 }
 .select {
   width: 30vw;
   height: 52px;
-  background: #f7f8fa;
+  background: #c2c4c8;
   border: none;
   border-bottom: 1px solid #000;
 }
@@ -82,17 +81,17 @@
   border: 1px solid #1d262d;
   padding: 10px 80px;
   border-radius: 5%;
-  background: #fff;
+  background: rgb(207, 198, 198);
 }
 .create {
   color: #fff;
   background: #1d262d;
 }
 
-.project{
+.project {
   padding-left: 3rem;
   padding-top: 4rem;
 }
-.link-div{
+.link-div {
   padding-top: 3.5rem;
 }
