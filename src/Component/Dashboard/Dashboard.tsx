@@ -40,7 +40,6 @@ const Dashboard = () => {
         'https://hu-22-angular-mockapi-urtjok3rza-wl.a.run.app/project',
         { headers: headers }
       );
-      console.log(response.data);
       setAllProjects(response.data);
     }
     getRes();
@@ -142,7 +141,7 @@ const Dashboard = () => {
                       setFpriority(event.target.value);
                       console.log(event.target.value,"prioity");
                     }}>
-                    <option selected value="">
+                    <option selected value=''>
                       {t('None')}
                     </option>
                     <option value="1">{'LOW'}</option>

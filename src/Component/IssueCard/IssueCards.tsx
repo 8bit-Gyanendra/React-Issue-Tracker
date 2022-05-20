@@ -33,14 +33,14 @@ const IssueCards = ({ list, filterbypriority, filterbyassignee }: Props) => {
     if (filterbyassignee === '') {
       setFilter1([...list]);
     } else {
-      setFilter1([...filter1.filter((ele: any) => ele.assignee.id == filterbyassignee)]);
+      setFilter1([...list.filter((ele: any) => ele.assignee.id == filterbyassignee)]);
     }
   }, [filterbyassignee]);
   useEffect(() => {
     if (filterbypriority === '') {
       setFilter1([...filter1]);
     } else {
-      setFilter1([...filter1.filter((ele: any) => ele.priority == filterbypriority)]);
+      setFilter1([...list.filter((ele: any) => ele.priority == filterbypriority)]);
     }
   }, [filterbypriority]);
   return (
